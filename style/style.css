@@ -533,6 +533,43 @@ ul.tabs.primary li.active a {
   background: #1b6aba;
   border: none;
 }
+#block-admin-display-form {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+#block-admin-display-form thead {
+  background: #eee;
+}
+#block-admin-display-form thead th {
+  padding: 5px;
+}
+#block-admin-display-form thead tr {
+  background: #eee;
+}
+#block-admin-display-form tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+#block-admin-display-form tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  #block-admin-display-form tr {
+    float: none;
+    width: 100%;
+  }
+  #block-admin-display-form tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}
+#block-admin-display-form td {
+  padding: 5px;
+}
+#block-admin-display-form table {
+  width: 100%;
+}
 .hosting-info-list {
   width: 50%;
   float: left;
@@ -641,4 +678,8 @@ footer .container a {
 }
 #hosting-task-list table td {
   padding: 5px;
+}
+a.tabledrag-handle .handle {
+  width: 20px;
+  height: 24px;
 }
