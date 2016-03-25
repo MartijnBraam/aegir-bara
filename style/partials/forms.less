@@ -1,17 +1,36 @@
 .form-item {
 
   &.form-type-textfield,
-  &.form-type-radios {
+  &.form-type-password,
+  &.form-type-radios,
+  &.form-type-textarea {
     padding: 15px 0;
   }
 
-  &.form-type-textfield {
+  &.form-type-textfield,
+  &.form-type-password {
     input {
-      background: #EEE;
+      background: @form-input;
       border: none;
       padding: 3px;
     }
   }
+
+  &.form-type-textarea {
+    textarea {
+      background: @form-input;
+      padding: 3px;
+      border: none;
+    }
+    .grippie {
+      background-color: darken(@form-input, 5%);
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px mix(@form-input, #fffb7a, 60%) inset;
+  }
+
 }
 
 fieldset {

@@ -224,13 +224,27 @@ body div#admin-menu li.admin-menu-account > a {
   background: #14518d;
 }
 .form-item.form-type-textfield,
-.form-item.form-type-radios {
+.form-item.form-type-password,
+.form-item.form-type-radios,
+.form-item.form-type-textarea {
   padding: 15px 0;
 }
-.form-item.form-type-textfield input {
+.form-item.form-type-textfield input,
+.form-item.form-type-password input {
   background: #EEE;
   border: none;
   padding: 3px;
+}
+.form-item.form-type-textarea textarea {
+  background: #EEE;
+  padding: 3px;
+  border: none;
+}
+.form-item.form-type-textarea .grippie {
+  background-color: #e1e1e1;
+}
+.form-item input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f5f3c0 inset;
 }
 fieldset {
   padding: 15px 0;
@@ -311,7 +325,7 @@ header div.site-name {
   font-size: 18px;
   letter-spacing: -1px;
   color: #ace;
-  line-height: 40px;
+  line-height: 24px;
   margin: 20px 0;
   padding: 0 0 0 19px;
   border-left: 1px solid #14518d;
