@@ -745,3 +745,43 @@ a.tabledrag-handle .handle {
   display: inline;
   padding-right: 10px;
 }
+.system-status-report {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.system-status-report thead {
+  background: #eee;
+}
+.system-status-report thead th {
+  padding: 5px;
+}
+.system-status-report thead tr {
+  background: #eee;
+}
+.system-status-report tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+.system-status-report tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  .system-status-report tr {
+    float: none;
+    width: 100%;
+  }
+  .system-status-report tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}
+.system-status-report td {
+  padding: 5px;
+}
+body.aegir #coffee-form {
+  background: #147;
+}
+body.aegir #coffee-form #coffee-q {
+  background: #EEE;
+}
