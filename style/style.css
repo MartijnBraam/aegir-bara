@@ -651,6 +651,40 @@ ul.tabs.primary li.active a {
 .page-content .views-table td {
   padding: 5px;
 }
+.sticky-table {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.sticky-table thead {
+  background: #eee;
+}
+.sticky-table thead th {
+  padding: 5px;
+}
+.sticky-table thead tr {
+  background: #eee;
+}
+.sticky-table tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+.sticky-table tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  .sticky-table tr {
+    float: none;
+    width: 100%;
+  }
+  .sticky-table tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}
+.sticky-table td {
+  padding: 5px;
+}
 footer .container {
   background: #147;
   padding: 10px;
