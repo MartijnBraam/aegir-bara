@@ -156,6 +156,31 @@ a img {
     padding-right: 15px;
   }
 }
+.aegir-table td {
+  padding: 5px;
+}
+.aegir-table-block thead {
+  background: #eee;
+}
+.aegir-table-block thead th {
+  padding: 5px;
+}
+.aegir-table-block thead tr {
+  background: #eee;
+}
+.aegir-table-block tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+.aegir-table-block tr td {
+  padding: 5px;
+}
+.aegir-table-block tr td.active {
+  background: transparent;
+}
+.aegir-table-block tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
 @media only screen and (max-device-width: 480px) {
   body.admin-menu {
     margin-top: 0 !important;
@@ -473,6 +498,12 @@ main div.sidebar .block .views-table tr {
   height: 32px;
   background: #F8F8F8;
 }
+main div.sidebar .block .views-table tr td {
+  padding: 5px;
+}
+main div.sidebar .block .views-table tr td.active {
+  background: transparent;
+}
 main div.sidebar .block .views-table tr.hosting-success {
   background-color: #F8F8F8 !important;
 }
@@ -556,6 +587,9 @@ ul.tabs.primary li.active a {
     padding-right: 15px;
   }
 }
+.page-content .views-table td {
+  padding: 5px;
+}
 footer .container {
   background: #147;
   padding: 10px;
@@ -604,4 +638,7 @@ footer .container a {
     white-space: nowrap;
     padding-right: 15px;
   }
+}
+#hosting-task-list table td {
+  padding: 5px;
 }

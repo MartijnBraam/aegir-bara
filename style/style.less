@@ -200,24 +200,7 @@ main {
       .views-table {
         width: 100%;
 
-        thead {
-          background: #eee;
-          th {
-            padding: 5px;
-          }
-          tr {
-            background: #eee;
-          }
-        }
-
-        tr {
-          height: 32px;
-          background: @block-background;
-
-          &.hosting-success {
-            background-color: @block-background !important;
-          }
-        }
+        .aegir-table-block();
       }
     }
   }

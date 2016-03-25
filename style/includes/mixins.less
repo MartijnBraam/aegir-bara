@@ -31,7 +31,6 @@
     &.hosting-success {
       background-color: @block-background !important;
     }
-
     @media only screen and (max-device-width : 480px) {
       td {
         white-space: nowrap;
@@ -39,6 +38,38 @@
       }
       float: none;
       width: 100%;
+    }
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+.aegir-table-block {
+  thead {
+    background: #eee;
+    th {
+      padding: 5px;
+    }
+    tr {
+      background: #eee;
+    }
+  }
+
+  tr {
+    height: 32px;
+    background: @block-background;
+
+    td {
+      padding: 5px;
+      &.active {
+        background: transparent;
+      }
+    }
+
+    &.hosting-success {
+      background-color: @block-background !important;
     }
   }
 }
