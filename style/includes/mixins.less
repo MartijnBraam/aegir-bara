@@ -1,0 +1,44 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.aegir-table {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+
+  thead {
+    background: #eee;
+    th {
+      padding: 5px;
+    }
+    tr {
+      background: #eee;
+    }
+  }
+
+  tr {
+    height: 32px;
+    background: @block-background;
+
+    &.hosting-success {
+      background-color: @block-background !important;
+    }
+
+    @media only screen and (max-device-width : 480px) {
+      td {
+        white-space: nowrap;
+        padding-right: 15px;
+      }
+      float: none;
+      width: 100%;
+    }
+  }
+}

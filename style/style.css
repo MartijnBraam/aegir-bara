@@ -1,0 +1,607 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+.aegir-table {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.aegir-table thead {
+  background: #eee;
+}
+.aegir-table thead th {
+  padding: 5px;
+}
+.aegir-table thead tr {
+  background: #eee;
+}
+.aegir-table tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+.aegir-table tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  .aegir-table tr {
+    float: none;
+    width: 100%;
+  }
+  .aegir-table tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  body.admin-menu {
+    margin-top: 0 !important;
+  }
+  body div#admin-menu {
+    display: none;
+  }
+  body .view-content {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+}
+body div#admin-menu {
+  background: #147;
+}
+body div#admin-menu #admin-menu-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  body div#admin-menu #admin-menu-wrapper {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body div#admin-menu #admin-menu-wrapper {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  body div#admin-menu #admin-menu-wrapper {
+    width: 1600px;
+  }
+}
+body div#admin-menu .dropdown a {
+  color: #ace;
+  border-right-color: #14518d;
+}
+body div#admin-menu li.admin-menu-account > a {
+  background: #14518d;
+}
+.form-item.form-type-textfield,
+.form-item.form-type-radios {
+  padding: 15px 0;
+}
+.form-item.form-type-textfield input {
+  background: #EEE;
+  border: none;
+  padding: 3px;
+}
+fieldset {
+  padding: 15px 0;
+}
+.fieldset-wrapper {
+  border-left: 3px solid #eee;
+  padding-left: 30px;
+}
+.fieldset-legend {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+input[type=submit],
+input[type=button],
+input[type=reset] {
+  border: none;
+  background: #147;
+  color: #ace;
+  padding: 5px 14px;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover {
+  background: #14518d;
+}
+body {
+  background: #222;
+}
+body,
+td,
+th {
+  font-family: 'Cantarell', 'Segou UI', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container {
+    width: 1600px;
+  }
+}
+a {
+  color: #147;
+  text-decoration: none;
+}
+a:hover {
+  color: #14518d;
+}
+header {
+  background: #147;
+}
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header .logo img {
+  width: 120px;
+  margin-right: 10px;
+  margin-top: 18px;
+  float: left;
+}
+header div.site-name {
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #ace;
+  line-height: 40px;
+  margin: 20px 0;
+  padding: 0 0 0 19px;
+  border-left: 1px solid #14518d;
+  float: left;
+}
+div.messages {
+  background: white;
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  margin: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+h2.page-title {
+  font-size: 32px;
+  font-weight: 200;
+}
+h2.page-title span {
+  color: #147;
+  padding-right: 5px;
+}
+nav {
+  background: #147;
+  border-top: 1px solid #14518d;
+}
+nav:before,
+nav:after {
+  content: " ";
+  display: table;
+}
+nav:after {
+  clear: both;
+}
+nav div.breadcrumb {
+  line-height: 40px;
+  font-size: 11px;
+  float: left;
+  color: #ace;
+}
+nav div.breadcrumb a {
+  color: #ace;
+  text-decoration: none;
+}
+nav ul.links {
+  padding: 5px 0 0;
+  float: right;
+}
+nav ul.links li {
+  padding: 0;
+}
+nav ul.links a {
+  background: #14518d;
+  font-size: 11px;
+  line-height: 25px;
+  padding: 5px 15px;
+  margin-right: 1px;
+  text-decoration: none;
+  color: white;
+}
+nav ul.links a:hover {
+  color: black;
+  background: #2784e0;
+}
+nav ul.links li.active a,
+nav ul.links li a.active {
+  background: #e8e8e8;
+  color: #444;
+}
+div.submitted {
+  display: none;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  background: #FFF;
+}
+@media screen and (min-width: 1000px) {
+  main {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  main {
+    width: 1600px;
+  }
+}
+main:before,
+main:after {
+  content: " ";
+  display: table;
+}
+main:after {
+  clear: both;
+}
+main #main-content {
+  float: left;
+  width: 65%;
+  padding: 10px;
+}
+main #main-content:before,
+main #main-content:after {
+  content: " ";
+  display: table;
+}
+main #main-content:after {
+  clear: both;
+}
+@media screen and (min-width: 1800px) {
+  main #main-content {
+    width: 80%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  main #main-content {
+    float: none;
+    width: 100%;
+  }
+}
+main #main-content .page-content {
+  margin-top: 30px;
+}
+main div.sidebar {
+  float: right;
+  width: 35%;
+  padding: 10px;
+}
+main div.sidebar:before,
+main div.sidebar:after {
+  content: " ";
+  display: table;
+}
+main div.sidebar:after {
+  clear: both;
+}
+@media screen and (min-width: 1800px) {
+  main div.sidebar {
+    width: 20%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  main div.sidebar {
+    float: none;
+    width: 100%;
+  }
+}
+main div.sidebar .block {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  background: #F8F8F8;
+}
+main div.sidebar .block .content {
+  padding: 10px;
+}
+main div.sidebar .block.block-views .content {
+  padding: 0;
+}
+main div.sidebar .block h2 {
+  text-align: center;
+  font-weight: 200;
+  background: #147;
+  color: #ace;
+  height: 32px;
+  line-height: 32px;
+}
+main div.sidebar .block .views-table {
+  width: 100%;
+}
+main div.sidebar .block .views-table thead {
+  background: #eee;
+}
+main div.sidebar .block .views-table thead th {
+  padding: 5px;
+}
+main div.sidebar .block .views-table thead tr {
+  background: #eee;
+}
+main div.sidebar .block .views-table tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+main div.sidebar .block .views-table tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+ul.tabs.primary {
+  border: none;
+  padding: 0;
+}
+@media only screen and (max-device-width: 480px) {
+  ul.tabs.primary {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 48px;
+  }
+}
+ul.tabs.primary a {
+  background: #147;
+  color: #ace;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 32px;
+}
+ul.tabs.primary a:hover {
+  background: #14518d;
+}
+ul.tabs.primary li.active a {
+  background: #1b6aba;
+  border: none;
+}
+.hosting-info-list {
+  width: 50%;
+  float: left;
+}
+@media only screen and (max-device-width: 480px) {
+  .hosting-info-list {
+    float: none;
+    width: 100%;
+  }
+}
+.hosting-info-list .form-type-item {
+  padding-left: 100px;
+  position: relative;
+}
+.hosting-info-list .form-type-item label {
+  position: absolute;
+  left: 0;
+  width: 95px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 9px;
+  display: block;
+}
+.page-content .views-table {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.page-content .views-table thead {
+  background: #eee;
+}
+.page-content .views-table thead th {
+  padding: 5px;
+}
+.page-content .views-table thead tr {
+  background: #eee;
+}
+.page-content .views-table tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+.page-content .views-table tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  .page-content .views-table tr {
+    float: none;
+    width: 100%;
+  }
+  .page-content .views-table tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}
+footer .container {
+  background: #147;
+  padding: 10px;
+}
+footer .container a {
+  color: #ace;
+}
+#hosting-task-list {
+  background: #F8F8F8;
+  float: right;
+  width: 50%;
+}
+@media only screen and (max-device-width: 480px) {
+  #hosting-task-list {
+    float: none;
+    width: 100%;
+  }
+}
+#hosting-task-list table {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+#hosting-task-list table thead {
+  background: #eee;
+}
+#hosting-task-list table thead th {
+  padding: 5px;
+}
+#hosting-task-list table thead tr {
+  background: #eee;
+}
+#hosting-task-list table tr {
+  height: 32px;
+  background: #F8F8F8;
+}
+#hosting-task-list table tr.hosting-success {
+  background-color: #F8F8F8 !important;
+}
+@media only screen and (max-device-width: 480px) {
+  #hosting-task-list table tr {
+    float: none;
+    width: 100%;
+  }
+  #hosting-task-list table tr td {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+}

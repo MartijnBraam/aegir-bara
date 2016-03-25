@@ -1,0 +1,43 @@
+.form-item {
+
+  &.form-type-textfield,
+  &.form-type-radios {
+    padding: 15px 0;
+  }
+
+  &.form-type-textfield {
+    input {
+      background: #EEE;
+      border: none;
+      padding: 3px;
+    }
+  }
+}
+
+fieldset {
+  padding: 15px 0;
+
+}
+
+.fieldset-wrapper {
+  border-left: 3px solid #eee;
+  padding-left: 30px;
+}
+
+.fieldset-legend {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+input[type=submit],
+input[type=button],
+input[type=reset] {
+  border: none;
+  background: @primary-color;
+  color: @inverted-text;
+  padding: 5px 14px;
+
+  &:hover {
+    background: @primary-color-highlight;
+  }
+}
