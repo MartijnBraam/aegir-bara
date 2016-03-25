@@ -547,41 +547,51 @@ ul.tabs.primary li.active a {
   background: #1b6aba;
   border: none;
 }
-#block-admin-display-form {
+#block-admin-display-form,
+#hosting-queues-configure {
   width: 100%;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
-#block-admin-display-form thead {
+#block-admin-display-form thead,
+#hosting-queues-configure thead {
   background: #eee;
 }
-#block-admin-display-form thead th {
+#block-admin-display-form thead th,
+#hosting-queues-configure thead th {
   padding: 5px;
 }
-#block-admin-display-form thead tr {
+#block-admin-display-form thead tr,
+#hosting-queues-configure thead tr {
   background: #eee;
 }
-#block-admin-display-form tr {
+#block-admin-display-form tr,
+#hosting-queues-configure tr {
   height: 32px;
   background: #F8F8F8;
 }
-#block-admin-display-form tr.hosting-success {
+#block-admin-display-form tr.hosting-success,
+#hosting-queues-configure tr.hosting-success {
   background-color: #F8F8F8 !important;
 }
 @media only screen and (max-device-width: 480px) {
-  #block-admin-display-form tr {
+  #block-admin-display-form tr,
+  #hosting-queues-configure tr {
     float: none;
     width: 100%;
   }
-  #block-admin-display-form tr td {
+  #block-admin-display-form tr td,
+  #hosting-queues-configure tr td {
     white-space: nowrap;
     padding-right: 15px;
   }
 }
-#block-admin-display-form td {
+#block-admin-display-form td,
+#hosting-queues-configure td {
   padding: 5px;
 }
-#block-admin-display-form table {
+#block-admin-display-form table,
+#hosting-queues-configure table {
   width: 100%;
 }
 .hosting-info-list {
@@ -696,4 +706,8 @@ footer .container a {
 a.tabledrag-handle .handle {
   width: 20px;
   height: 24px;
+}
+.hosting-queue-frequency div {
+  display: inline;
+  padding-right: 10px;
 }
